@@ -29,8 +29,8 @@ jobs:
 
       - name: Run main script
         env:
-          TASKS: ${{ secrets.TASKS }}
-          COOKIES_331592181: ${{ secrets.COOKIES_331592181 }}
-          MESSAGE_TEMPLATE: ${{ secrets.MESSAGE_TEMPLATE }}
+          TASKS: '${{ secrets.TASKS }}'
+          COOKIES_331592181: '${{ secrets.COOKIES_331592181 }}'
+          MESSAGE_TEMPLATE: '${{ secrets.MESSAGE_TEMPLATE }}'
         run: |
           python main.py
