@@ -32,6 +32,7 @@ jobs:
           TASKS: '${{ secrets.TASKS }}'
           COOKIES_331592181: '${{ secrets.COOKIES_331592181 }}'
           MESSAGE_TEMPLATE: '${{ secrets.MESSAGE_TEMPLATE }}'
-          MATCH_MODE: '${{ secrets.MATCH_MODE }}'
+          MATCH_MODE: 'api'
+          PLAYWRIGHT_TIMEOUT: '30000'
         run: |
           python main.py
